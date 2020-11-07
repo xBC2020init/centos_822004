@@ -1,1 +1,11 @@
-
+ubuntu@ubuntu:~/Desktop$ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys 05B555B38483C65D
+gpg: key 05B555B38483C65D: public key "CentOS (CentOS Official Signing Key) <security@centos.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+ubuntu@ubuntu:~/Desktop$ gpg --verify CHECKSUM.asc CHECKSUM
+gpg: Signature made Fri 19 Jun 2020 05:10:24 PM UTC
+gpg:                using RSA key 05B555B38483C65D
+gpg: Good signature from "CentOS (CentOS Official Signing Key) <security@centos.org>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 99DB 70FA E1D7 CE22 7FB6  4882 05B5 55B3 8483 C65D
